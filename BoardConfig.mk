@@ -14,6 +14,7 @@ TARGET_BOOTLOADER_BOARD_NAME := mars
 
 # Display
 TARGET_SCREEN_DENSITY := 560
+TARGET_RECOVERY_UI_MARGIN_HEIGHT := 175
 
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := mars|star
@@ -38,6 +39,3 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 114001162240
 # Include proprietary files
 include vendor/xiaomi/mars/BoardConfigVendor.mk
 -include vendor/xiaomi/mars-firmware/BoardConfigVendor.mk
-
-# Inherit from proprietary files for miuicamera
-include vendor/xiaomi/mars-miuicamera/products/board.mk
