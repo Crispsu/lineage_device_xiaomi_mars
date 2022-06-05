@@ -15,6 +15,7 @@ $(call inherit-product, device/xiaomi/mars/device.mk)
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_USES_AOSP_RECOVERY := true
+EXTRA_UDFPS_ANIMATIONS := true
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := mars
