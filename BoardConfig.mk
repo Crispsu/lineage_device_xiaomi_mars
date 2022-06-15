@@ -19,6 +19,10 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 175
 # OTA assert
 TARGET_OTA_ASSERT_DEVICE := mars|star
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_mars
+TARGET_RECOVERY_DEVICE_MODULES := libinit_mars
+
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/mars
 TARGET_KERNEL_CONFIG := vendor/mars_defconfig
